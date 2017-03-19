@@ -1,7 +1,7 @@
 package com.massivecraft.massivecore.store.migration;
 
-import com.massivecraft.massivecore.xlib.gson.JsonElement;
-import com.massivecraft.massivecore.xlib.gson.JsonObject;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 
 public class VersionMigratorRename implements VersionMigrator
 {

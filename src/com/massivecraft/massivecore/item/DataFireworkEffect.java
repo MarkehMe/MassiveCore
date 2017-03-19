@@ -9,6 +9,7 @@ import java.util.Objects;
 
 import org.bukkit.FireworkEffect;
 
+import com.google.gson.annotations.SerializedName;
 import com.massivecraft.massivecore.collections.MassiveListDef;
 import com.massivecraft.massivecore.command.editor.annotation.EditorMethods;
 import com.massivecraft.massivecore.command.editor.annotation.EditorType;
@@ -17,7 +18,6 @@ import com.massivecraft.massivecore.command.type.convert.TypeConverterColor;
 import com.massivecraft.massivecore.command.type.convert.TypeConverterFireworkEffectType;
 import com.massivecraft.massivecore.comparator.ComparatorSmart;
 import com.massivecraft.massivecore.util.MUtil;
-import com.massivecraft.massivecore.xlib.gson.annotations.SerializedName;
 
 @EditorMethods(true)
 public class DataFireworkEffect implements Comparable<DataFireworkEffect>

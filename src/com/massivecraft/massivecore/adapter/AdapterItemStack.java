@@ -3,13 +3,13 @@ package com.massivecraft.massivecore.adapter;
 import java.lang.reflect.Type;
 import org.bukkit.inventory.ItemStack;
 
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParseException;
+import com.google.gson.JsonSerializationContext;
+import com.google.gson.JsonSerializer;
 import com.massivecraft.massivecore.item.DataItemStack;
-import com.massivecraft.massivecore.xlib.gson.JsonDeserializationContext;
-import com.massivecraft.massivecore.xlib.gson.JsonDeserializer;
-import com.massivecraft.massivecore.xlib.gson.JsonElement;
-import com.massivecraft.massivecore.xlib.gson.JsonParseException;
-import com.massivecraft.massivecore.xlib.gson.JsonSerializationContext;
-import com.massivecraft.massivecore.xlib.gson.JsonSerializer;
 
 /**
  * This is a GSON serializer/deserializer for the Bukkit ItemStack. Why not use

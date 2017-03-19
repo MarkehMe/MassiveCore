@@ -1,6 +1,6 @@
 package com.massivecraft.massivecore.store.migration;
 
-import com.massivecraft.massivecore.xlib.gson.JsonObject;
+import com.google.gson.JsonObject;
 
 public interface VersionMigrator
 {

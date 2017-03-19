@@ -24,6 +24,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerLoginEvent;
 
+import com.google.gson.reflect.TypeToken;
 import com.massivecraft.massivecore.MassiveCore;
 import com.massivecraft.massivecore.SenderPresence;
 import com.massivecraft.massivecore.SenderType;
@@ -33,7 +34,6 @@ import com.massivecraft.massivecore.event.EventMassiveCoreSenderUnregister;
 import com.massivecraft.massivecore.mixin.MixinActual;
 import com.massivecraft.massivecore.mixin.MixinPlayed;
 import com.massivecraft.massivecore.store.SenderEntity;
-import com.massivecraft.massivecore.xlib.gson.reflect.TypeToken;
 
 /**
  * Identification of a CommandSender can be done in 4 different ways.

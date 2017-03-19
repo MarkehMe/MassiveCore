@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.Map.Entry;
 import java.util.Set;
 
+import com.google.gson.JsonObject;
 import com.massivecraft.massivecore.MassiveCore;
 import com.massivecraft.massivecore.MassiveCorePerm;
 import com.massivecraft.massivecore.MassiveException;
@@ -14,7 +15,6 @@ import com.massivecraft.massivecore.store.Coll;
 import com.massivecraft.massivecore.store.Db;
 import com.massivecraft.massivecore.store.Entity;
 import com.massivecraft.massivecore.store.MStore;
-import com.massivecraft.massivecore.xlib.gson.JsonObject;
 
 public class CmdMassiveCoreStoreCopydb extends MassiveCommand
 {

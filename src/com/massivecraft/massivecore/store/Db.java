@@ -3,9 +3,10 @@ package com.massivecraft.massivecore.store;
 import java.util.Collection;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
 
-import com.massivecraft.massivecore.xlib.gson.JsonObject;
+import com.google.gson.JsonObject;
+
+import java.util.Set;
 
 public interface Db
 {

@@ -3,16 +3,17 @@ package com.massivecraft.massivecore.adapter;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.Map.Entry;
-import java.util.AbstractMap.SimpleEntry;
 
-import com.massivecraft.massivecore.xlib.gson.JsonArray;
-import com.massivecraft.massivecore.xlib.gson.JsonDeserializationContext;
-import com.massivecraft.massivecore.xlib.gson.JsonDeserializer;
-import com.massivecraft.massivecore.xlib.gson.JsonElement;
-import com.massivecraft.massivecore.xlib.gson.JsonNull;
-import com.massivecraft.massivecore.xlib.gson.JsonParseException;
-import com.massivecraft.massivecore.xlib.gson.JsonSerializationContext;
-import com.massivecraft.massivecore.xlib.gson.JsonSerializer;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonNull;
+import com.google.gson.JsonParseException;
+import com.google.gson.JsonSerializationContext;
+import com.google.gson.JsonSerializer;
+
+import java.util.AbstractMap.SimpleEntry;
 
 public class AdapterEntry implements JsonDeserializer<Entry<?, ?>>, JsonSerializer<Entry<?, ?>>
 {

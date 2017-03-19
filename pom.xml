@@ -31,10 +31,64 @@
             <groupId>net.milkbowl.vault</groupId>
             <artifactId>Vault</artifactId>
         </dependency>
+        <!-- Gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
+        <!-- MongoDB -->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+        </dependency>
     </dependencies>
 
     <!-- Build -->
     <build>
+        <!-- Plugins -->
+        <plugins>
+            <!-- Shade Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <finalName>MassiveCore</finalName>
+                            <minimizeJar>true</minimizeJar>
+                            <artifactSet>
+                                <includes>
+                                    <!-- Shade Gson -->
+                                    <include>com.google.code.gson</include>
+                                    <!-- Shade MongoDB -->
+                                    <include>org.mongodb</include>
+                                    <!-- Shade BSON -->
+                                    <include>org.bson</include>
+                                </includes>
+                            </artifactSet>
+                            <relocations>
+                                <relocation>
+                                    <pattern>com.google.gson</pattern>
+                                    <shadedPattern>com.massivecraft.massivecore.xlib.gson</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>com.mongodb</pattern>
+                                    <shadedPattern>com.massivecraft.massivecore.xlib.mongodb</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.bson</pattern>
+                                    <shadedPattern>com.massivecraft.massivecore.xlib.bson</shadedPattern>
+                                </relocation>
+                            </relocations>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
         <!-- Resources -->
         <resources>
             <!-- Standard -->

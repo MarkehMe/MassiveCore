@@ -6,11 +6,12 @@ import java.util.Objects;
 
 import org.bukkit.inventory.ItemStack;
 
+import com.google.gson.JsonElement;
 import com.massivecraft.massivecore.command.MassiveCommand;
 import com.massivecraft.massivecore.nms.NmsItemStackTooltip;
 import com.massivecraft.massivecore.util.MUtil;
 import com.massivecraft.massivecore.util.Txt;
-import com.massivecraft.massivecore.xlib.gson.JsonElement;
+
 import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 

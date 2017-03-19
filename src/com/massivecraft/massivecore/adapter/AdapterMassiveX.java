@@ -6,15 +6,15 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Map;
 
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonNull;
+import com.google.gson.JsonParseException;
+import com.google.gson.JsonSerializationContext;
+import com.google.gson.JsonSerializer;
+import com.google.gson.internal.$Gson$Types;
 import com.massivecraft.massivecore.collections.Def;
-import com.massivecraft.massivecore.xlib.gson.JsonDeserializationContext;
-import com.massivecraft.massivecore.xlib.gson.JsonDeserializer;
-import com.massivecraft.massivecore.xlib.gson.JsonElement;
-import com.massivecraft.massivecore.xlib.gson.JsonNull;
-import com.massivecraft.massivecore.xlib.gson.JsonParseException;
-import com.massivecraft.massivecore.xlib.gson.JsonSerializationContext;
-import com.massivecraft.massivecore.xlib.gson.JsonSerializer;
-import com.massivecraft.massivecore.xlib.gson.internal.$Gson$Types;
 
 /**
  * This is the abstract adapter for all "Massive structures".

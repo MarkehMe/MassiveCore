@@ -2,11 +2,11 @@ package com.massivecraft.massivecore.store;
 
 import java.util.Objects;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import com.massivecraft.massivecore.Identified;
 import com.massivecraft.massivecore.MassiveCore;
 import com.massivecraft.massivecore.store.accessor.Accessor;
-import com.massivecraft.massivecore.xlib.gson.Gson;
-import com.massivecraft.massivecore.xlib.gson.JsonObject;
 
 /**
  * Usage of this class is highly optional. You may persist anything. If you are 

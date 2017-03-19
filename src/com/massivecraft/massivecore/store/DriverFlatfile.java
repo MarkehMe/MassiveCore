@@ -15,9 +15,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.massivecraft.massivecore.util.DiscUtil;
-import com.massivecraft.massivecore.xlib.gson.JsonObject;
-import com.massivecraft.massivecore.xlib.gson.JsonParser;
 
 public class DriverFlatfile extends DriverAbstract
 {

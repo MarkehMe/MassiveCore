@@ -3,10 +3,10 @@ package com.massivecraft.massivecore.adapter;
 import java.lang.reflect.Type;
 import java.util.Collection;
 
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonElement;
 import com.massivecraft.massivecore.collections.MassiveTreeSet;
 import com.massivecraft.massivecore.collections.MassiveTreeSetDef;
-import com.massivecraft.massivecore.xlib.gson.JsonDeserializationContext;
-import com.massivecraft.massivecore.xlib.gson.JsonElement;
 
 public class AdapterMassiveTreeSet extends AdapterMassiveX<MassiveTreeSet<?, ?>>
 {
